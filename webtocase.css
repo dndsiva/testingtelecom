@@ -1,0 +1,108 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*background: linear-gradient(to bottom,#ffffff, #3498db );*/
+  } 
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: transparent;
+  }
+  form {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    /*background-color: #3498db, #ffffff;*/
+    border-radius: 5px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }  
+  form input[type="submit"] {
+    background-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+  }  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+    transition: 0.5s;
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+  .animated-label {
+    color: white;
+    font-size: 3.5vh;
+    animation: slideInFromLeft 0.5s ease-in-out forwards;
+  }
+  h2{
+    color: white;
+    justify-content: center;
+    font-size: 40px;
+  }
+  .homepage{
+    display: flex;
+    padding-left: 30em;
+    align-items: flex-start;
+    font-size: 36px;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: jump 0.5s;
+    filter: drop-shadow(10px 40px 40px rgb(255, 255, 255));
+  }
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  header a{
+    color: white;
+    text-decoration: none;
+  }
+  header a:hover{
+    color: mediumspringgreen;
+  }
+  

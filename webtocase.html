@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Web-to-Case Form</title>
+  <link rel="stylesheet" href="webtocase.css">
+</head>
+<body>
+  <div class="background-video">
+    <video autoplay loop muted>
+      <source src="./network_-_77740 (Original).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+</div>
+  <header class="homepage">
+    <a href="telecom.html">Home</a>
+</header>
+    <div class="form-container">
+      <div class="logo-container">
+          <img src="https://imagetolink.com/ib/8Ei6zNruPX.png" alt="Company Logo" class="logo" height="150" width="150">
+      </div>
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+              <input type=hidden name="orgid" value="00D5i00000CZwPw">
+            <input type=hidden name="retURL" value="https://www.verizon.com/">
+            <h2>Service Request</h2>
+            <label for="name" class="animated-label">Name</label>
+            <input  id="name" maxlength="80" name="name" size="20" type="text" />
+            <br>
+        
+            <label for="email" class="animated-label">Email</label>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" />
+            <br>
+
+            <label for="phone" class="animated-label">Phone</label>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+            <br>
+
+            <label for="company" class="animated-label">Company</label>
+            <input  id="company" maxlength="80" name="company" size="20" type="text" />
+            <br>
+          
+            <label for="subject" class="animated-label">Subject</label>
+            <input  id="subject" maxlength="80" name="subject" size="20" type="text" />
+            <br>
+        
+            <label for="description" class="animated-label">Description</label>
+            <textarea name="description"></textarea>
+            <br><br>
+            <input type="submit" value="Submit" class="animated-label">
+        </form>
+    </div>
+</body>
+</html>
